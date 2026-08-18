@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Draw group challenges and punishments for Online or IRL games." />
+    <title>Impractical Jokers | jakublabs.xyz</title>
+    <link rel="stylesheet" href="styles.css?v=1" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="page-title">
+      <section class="hero">
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>impracticaljokers.jakublabs.xyz</span></div>
+        <p class="kicker">terrible decisions, professionally presented</p>
+        <h1 id="page-title">Impractical<br />Jokers</h1>
+        <p class="lede">draw the challenge. take the punishment. do not blame the website.</p>
+      </section>
+
+      <section class="game-settings" aria-label="Game options">
+        <div class="setting-group">
+          <span class="setting-label">Game Option</span>
+          <div class="segmented-control" id="mode-control" role="group" aria-label="Game location">
+            <button class="segment is-active" type="button" data-mode="irl" aria-pressed="true">IRL</button>
+            <button class="segment" type="button" data-mode="online" aria-pressed="false">Online</button>
+          </div>
+        </div>
+        <label class="extreme-control">
+          <span class="extreme-copy"><strong>Extreme</strong><small>unlock the heavier deck</small></span>
+          <input id="extreme-toggle" type="checkbox" />
+          <span class="toggle-track" aria-hidden="true"><span></span></span>
+        </label>
+        <div class="deck-status"><span class="status-dot"></span><strong id="deck-count">loading decks</strong></div>
+      </section>
+
+      <section class="deck-grid">
+        <article class="draw-panel punishment-panel" data-deck="punishments">
+          <header class="panel-heading">
+            <div><p class="kicker">one person pays</p><h2>Punishments</h2></div>
+            <span class="deck-number">01</span>
+          </header>
+          <div class="card-stage" aria-live="polite">
+            <div class="playing-card" id="punishment-card">
+              <div class="card-back">
+                <img src="assets/joker-card.svg" alt="" />
+                <span>punishment deck</span>
+              </div>
+              <div class="card-front">
+                <div class="result-meta"><span>Punishment</span><em class="result-level">standard</em></div>
+                <p class="result-text">the card is waiting</p>
+                <div class="result-actions">
+                  <button class="icon-action copy-action" type="button">Copy</button>
+                </div>
+              </div>
+            </div>
+            <div class="draw-overlay" aria-hidden="true"><span></span><strong>selecting victim</strong></div>
+          </div>
+          <button class="draw-button" type="button" data-draw="punishments"><span>Reveal Punishment</span><b aria-hidden="true">&#8594;</b></button>
+        </article>
+
+        <article class="draw-panel challenge-panel" data-deck="challenges">
+          <header class="panel-heading">
+            <div><p class="kicker">everybody suffers</p><h2>Challenge Cards</h2></div>
+            <span class="deck-number">02</span>
+          </header>
+          <div class="card-stage" aria-live="polite">
+            <div class="playing-card" id="challenge-card">
+              <div class="card-back">
+                <img src="assets/joker-card.svg" alt="" />
+                <span>challenge deck</span>
+              </div>
+              <div class="card-front">
+                <div class="result-meta"><span>Group Challenge</span><em class="result-level">standard</em></div>
+                <p class="result-text">the card is waiting</p>
+                <div class="result-actions">
+                  <button class="icon-action copy-action" type="button">Copy</button>
+                </div>
+              </div>
+            </div>
+            <div class="draw-overlay" aria-hidden="true"><span></span><strong>shuffling disaster</strong></div>
+          </div>
+          <button class="draw-button" type="button" data-draw="challenges"><span>Reveal Challenge</span><b aria-hidden="true">&#8594;</b></button>
+        </article>
+      </section>
+
+      <section class="history-section" id="history-section" hidden>
+        <header><div><p class="kicker">recent damage</p><h2>Draw history</h2></div><button id="clear-history" type="button">Clear</button></header>
+        <div class="history-list" id="history-list"></div>
+      </section>
+
+      <p class="safety-line">Keep it legal, consensual, and safe. Anyone can refuse or redraw a card.</p>
+    </main>
+    <script src="script.js?v=1"></script>
+  </body>
+</html>
