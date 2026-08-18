@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" role="img" aria-labelledby="title">
+  <title id="title">Abstract joker playing card</title>
+  <rect width="360" height="520" rx="28" fill="#0a0a0b"/>
+  <rect x="14" y="14" width="332" height="492" rx="20" fill="none" stroke="#e9ff70" stroke-width="3"/>
+  <path d="M180 82c-61 0-112 51-112 114 0 34 14 64 38 85l-21 72 68-31c9 2 18 3 27 3 62 0 112-50 112-113 0-16-3-31-9-45-17 20-42 32-70 32-52 0-94-41-94-92 0-5 0-10 1-14 17-8 38-11 60-11Z" fill="#e9ff70"/>
+  <path d="M120 106c-16-36-54-43-74-27 28 13 34 38 34 66l40-39Zm120 0c16-36 54-43 74-27-28 13-34 38-34 66l-40-39Z" fill="#f4f5ee"/>
+  <circle cx="138" cy="206" r="15" fill="#09090a"/>
+  <circle cx="222" cy="206" r="15" fill="#09090a"/>
+  <path d="M126 260c32 24 76 24 108 0-7 51-101 51-108 0Z" fill="#09090a"/>
+  <path d="m180 325-25 49 25 64 25-64-25-49Z" fill="#f4f5ee"/>
+  <circle cx="180" cy="445" r="13" fill="#e9ff70"/>
+  <text x="34" y="58" fill="#e9ff70" font-family="Arial,sans-serif" font-size="25" font-weight="800">J</text>
+  <text x="326" y="466" fill="#e9ff70" font-family="Arial,sans-serif" font-size="25" font-weight="800" text-anchor="end" transform="rotate(180 326 466)">J</text>
+</svg>
